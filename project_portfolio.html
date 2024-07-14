@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="project_portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <div class="left">Sanjana's Portfolio ^-^
+             
+        </div>
+        
+    
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Project</a></li>
+             <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="header-text">
+        <p>Student of B.Tech CSE</p>
+        <h1>Hi, My name is <span>Sanjana Saini</span><br> and I am passionate about<br> Web Development and DSA.</h1> 
+    </div>
+    
+</div>
+    </div>
+<!-- --------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="personal folder/user.jpg.jpg">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a second-year B.Tech student specialializing in Computer Science and Engineering at COER University.<br>
+                    Passionate about technology and innovation, I am currently enhancing my skills in web development, algorithms.<br>
+                    My interests includes coding, web development,and exploring emerging technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C</span></li>
+                            <li><span>C++</span></li>
+                            <li><span>JAVA</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2020</span><br>High school from Holy Ganges Public school</li>
+                            <li><span>2022</span><br>Intermidiate from Holy Ganges Public school</li>
+                            <li><span>2023-2027</span><br>B.Tech CSE from COER University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>PROJECTS</span></li>
+                            <li><span>PROJECT 1</span></li>
+                            <li><span>PROJECT 2</span></li>
+                            <li><span>PROJECT 3</span></li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!--------------Project--------------->
+<div id="My projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+         <div>
+            <i class="fa-regular fa-file-lines"></i>
+            <h2> PROJECT 1</h2>
+            <p>Landing page by using HTML and CSS</p>
+            <a href="#">Learn more</a>
+         </div>
+         <div>
+            <i class="fa-regular fa-address-card"></i>
+            <h2> PROJECT 2</h2>
+            <p>Personal portfolio by using HTML and CSS</p>
+            <a href="#">Learn more</a>
+         </div>
+         <div>
+            <i class="fa-solid fa-calculator"></i>
+            <h2> PROJECT 3</h2>
+            <p>Calculator by using HTML,CSS and JS</p>
+            <a href="#">Learn more</a>
+         </div>
+        
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------contact----------->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+           <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>contact@sanjana.com</p>
+              <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+              <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="Pictures/My CV " download class="btn btn2">Download CV</a>
+    </div>
+</div>
+</div>
+   <div class="abc">
+     <p>Made with <i class="fa-solid fa-heart"></i> by Sanjana Saini</p>
+   </div>
+</div>
+ 
+    <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+    </script>
+</body>
+</html>
